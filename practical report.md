@@ -1,7 +1,7 @@
 
 # **PROGRAMMING FOR PROGRAM SOLVING ESC-18105**
-## NAME-* SHIVAM KUMAR *
-## ROLL NO-*1914106 *
+## NAME-*SHIVAM KUMAR*
+## ROLL NO-*1914106*
 ## BRANCH-*CIVIL*
 ## SECTION-*CE(B2)*
 ![LOGO](https://blog.coachingkaro.org/wp-content/uploads/2019/07/logo.jpg)
@@ -13,6 +13,7 @@
 
 ## 01.Adding 2 Integers:
 
+'''C
 #include <stdio.h>
 
 int main()
@@ -31,6 +32,7 @@ int main()
 
     return 0;
 }
+'''C
 
 ### Output:
  
