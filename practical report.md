@@ -251,64 +251,9 @@ Enter an integer: 9
 ## -----------------------------
 
 
-## 06.Armstrong Number:
-
-#include<stdio.h>
-
-int main()
-
-{
-
-               int sum=0,digit;
-
-               int n, temp;
-
-               printf("enter any positive integer number");
-
-               scanf("%d",&n);
-
-               temp=n;
-   
-               while(temp>0)
-  
-        {
-
-               digit=temp%10;
-
-               temp/=10;
-
-               sum=sum+digit*digit*digit;
-
-        }
-
-               if(n==sum)
-
-               printf("\n %d is a armstrong number\n",n);
-
-               else
-
-               printf("\n %d is not a armstrong number\n",n);
-
-               return 0;
 
 
-}
-
-
-### Output:
-
-enter any positive integer number
-
-153     
-
-153 is a armstrong number
-
-
-
-## -----------------------------
-
-
-## 07.Calculator:
+## 06.Calculator:
 
 #include <stdio.h>
 
@@ -380,105 +325,10 @@ Enter two operands: 1.5
 
 ## -----------------------------
 
-## 08.Bubble Sort:
-
-#include <stdio.h>
- 
-int main()
-
-{
-
-       int array[100], n, c, d, swap;
-
- 
-       printf("Enter number of elements\n");
-
-
-       scanf("%d", &n);
-
- 
-       printf("Enter %d integers\n", n);
-
- 
-       for (c = 0; c < n; c++)
-
-
-       scanf("%d", &array[c]);
-
- 
-       for (c = 0 ; c < n - 1; c++)
-
-      {
-
-       for (d = 0 ; d < n - c - 1; d++)
-
-    {
-
-      if (array[d] > array[d+1]) /* For decreasing order use < */
-
-      {
-
-        swap       = array[d];
-
-        array[d]   = array[d+1];
-
-        array[d+1] = swap;
-
-      }
-
-    }
-
-     }
- 
-       printf("Sorted list in ascending order:\n");
- 
-       for (c = 0; c < n; c++)
-
-       printf("%d\n", array[c]);
- 
-       return 0;
-
-}
-
-### Output:
-
-Enter number of elements
-6
-
-Enter 6 integers
-
-2
-
--4
-
-7
-
-8
-
-4
-
-7
-
-Sorted list in ascending order:
-
--4
-
-2
-
-4
-
-7
-
-7
-
-8
 
 
 
-## -----------------------------
-
-
-## 09.Binary Search:
+## 07.Binary Search:
 
 #include<stdio.h>
         
@@ -610,7 +460,7 @@ element is found at the position 6
 ## -----------------------------
 
 
-## 10.Factorial Of A Number:
+## 8.Factorial Of A Number:
 
 
 #include <stdio.h>
@@ -664,7 +514,7 @@ Enter a number to calculate it's factorial
 ## -----------------------------
 
 
-## 11.FizzBuzz:
+## 9.FizzBuzz:
 
 #include<stdio.h>
 
@@ -708,7 +558,7 @@ fizz
 ## -----------------------------
 
 
-## 12.Sum of First 100 Numbers:
+## 10.Sum of First 100 Numbers:
 
 #include <stdio.h>
 
@@ -748,7 +598,7 @@ Sum = 5050
 ## -----------------------------
 
 
-## 13.Greater Of 2 Numbers:
+## 11.Greater Of 2 Numbers:
 
 #include<stdio.h>
 
@@ -797,7 +647,7 @@ both numbers are equal
 ## -----------------------------
 
 
-## 14.Greater Of 3 Numbers:
+## 12.Greater Of 3 Numbers:
 
 #include<stdio.h>
 
@@ -845,52 +695,8 @@ enter the three numbers which you want to compare
 
 
 
-## 15.GCD Of Numbers:
 
-#include<stdio.h>
-
-int main()
-{
-
-     int m,n,r=1;
-
-     printf("\n Enter value for m,n\n");
-
-     scanf("%d%d",&m,&n);
-
-     while(r!=0)
-
-    {
-
-     r=n%m;
-
-     n=m;
-
-     m=r;
-
-    }
-
-     printf("\n GCD=%d \n",n);
-
-     return 0;
-
-}
-
-### Output:
-
-Enter value for m,n
-
-12 14
-
-GCD=2
-
-
-
-
-## -----------------------------
-
-
-## 16.Leap Year Or Not:
+## 13.Leap Year Or Not:
 
 #include<stdio.h>
 
@@ -939,7 +745,7 @@ it is a leap year
 ## -----------------------------
 
 
-## 17.Linear Search:
+## 14.Linear Search:
 
 #include <stdio.h>
 
@@ -1014,7 +820,7 @@ Enter the number to search
 ## -----------------------------
 
 
-## 18.Matrix Addition:
+## 15.Matrix Addition:
 
 #include <stdio.h>
 
@@ -1099,7 +905,7 @@ Sum of entered matrices:-
 ## -----------------------------
 
 
-## 19.Transpose Of Matrix:
+## 16.Transpose Of Matrix:
 
 
 #include <stdio.h>
@@ -1190,7 +996,7 @@ Transpose of entered matrix :-
 ## -----------------------------
 
 
-## 20.Sum Of Digit Of Number:
+## 17.Sum Of Digit Of Number:
 
   
 #include<stdio.h>
@@ -1236,62 +1042,9 @@ sum of digits is 13
 ## -----------------------------
 
 
-## 21.Palindrome Number:
-
-#include <stdio.h>
-
-int main()
-
-{
-
-       int n, reverse = 0, temp;
-
-       printf("Enter a number to check if it is a palindrome or not\n");
-
-       scanf("%d",&n);
-
-       temp = n;
-
-       while( temp != 0 )
-
-       {
-
-       reverse = reverse * 10;
-
-       reverse = reverse + temp%10;
-
-       temp = temp/10;
-
-       }
 
 
-       if ( n == reverse )
-
-       printf("%d is a palindrome number.\n", n);
-
-       else
-
-       printf("%d is not a palindrome number.\n", n);
-
-       return 0;
-
-}
-
-### Output:
-
-Enter a number to check if it is a palindrome or not
-
-12321
-
-12321 is a palindrome number
-
-
-
-
-## -----------------------------
-
-
-## 22.Call By Value:
+## 18.Call By Value:
 
 #include <stdio.h>
  
@@ -1336,7 +1089,7 @@ Second integer = 12
 
 ## -----------------------------
 
-## 23.Call By Reference:
+## 19.Call By Reference:
 
 #include <stdio.h>
 
@@ -1379,7 +1132,7 @@ b = 20 after function call_by_reference
 ## -----------------------------
 
 
-## 24.Employees Details:
+## 20.Employees Details:
 
   
 #include <stdio.h>
@@ -1446,7 +1199,7 @@ Salary: 15,000000
 ## -----------------------------
 
 
-## 25.Product Of 2 Fractions:
+## 21.Product Of 2 Fractions:
 
 #include<stdio.h>
 
