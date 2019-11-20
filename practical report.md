@@ -12,7 +12,7 @@
 
 
 ## 01.Adding 2 Integers:
-
+```C
 #include <stdio.h>
 
 int main()
@@ -32,7 +32,7 @@ int main()
     return 0;
 }
 
-
+```
 ### Output:
  
 
