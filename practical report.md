@@ -48,7 +48,7 @@ int main()
 
 ## -----------------------------
 
-
+```c
 ## 02.Average Of N Numbers:
 
 #include <stdio.h>
@@ -89,7 +89,7 @@ int main()
     return 0;
 
 }
-
+```
 ### Output:
 
  Enter the numbers of elements:6
@@ -906,97 +906,28 @@ Sum of entered matrices:-
 ## -----------------------------
 
 
-## 16.Transpose Of Matrix:
 
-
-#include <stdio.h>
-
-int main()
-
+## 25. FRACTION PRODUCT USING STRUCTURE
+```C
+#include<stdio.h>
+struct fraction
 {
-
-         int m, n, c, d, matrix[10][10], transpose[10][10];
-
-         printf("Enter the number of rows and columns of matrix \n ");
-
-         scanf("%d%d",&m,&n); printf("Enter the elements of matrix \n");
-
-         for( c = 0 ; c < m ; c++ )
-
-         {
-
-         for( d = 0 ; d < n ; d++ )
-
-         {
-
-         scanf("%d",&matrix[c][d]);
-
-         }
-
-         }
-
-         for( c = 0 ; c < m ; c++ )
-
-         {
-
-         for( d = 0 ; d < n ; d++ )
-
-         {
-
-         transpose[d][c] = matrix[c][d];
-
-         }
-
-         }
-
-         printf("Transpose of entered matrix :-\n");
-
-         for( c = 0 ; c < n ; c++ )
-
-         {
-
-         for( d = 0 ; d < m ; d++ )
-
-         {
-         printf("%d\t",transpose[c][d]);
-
-         }
-
-         printf("\n");
-
-         }
-
-         return 0;
-
+        int num;
+        int den;
+};
+void main()
+{
+        int rnum,rden;
+        struct fraction f1,f2;
+        printf("enter numerator and denominator of first fraction\n");
+        scanf("%d%d",&f1.num,&f1.den);
+        printf("enter numerator and denominator of second fraction\n");
+        scanf("%d%d",&f2.num,&f2.den);  
+        rnum=f1.num*f2.num;
+        rden=f1.den*f2.den;
+        printf("\nproduct is : %d/%d\n",rnum,rden);
 }
-
-### Output:
-
-Enter the number of rows and columns of matrix
-
-2
-
-3
-
-Enter the elements of matrix
-
-1 2 3
-
-4 5 6
-
-Transpose of entered matrix :-
-
-1  4
-
-2  5
-
-3  6
-
-
-
-## -----------------------------
-
-
+``
 ## 17.Sum Of Digit Of Number:
 
   
