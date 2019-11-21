@@ -906,29 +906,8 @@ Sum of entered matrices:-
 ## -----------------------------
 
 
-
-## 25. FRACTION PRODUCT USING STRUCTURE
-```C
-#include<stdio.h>
-struct fraction
-{
-        int num;
-        int den;
-};
-void main()
-{
-        int rnum,rden;
-        struct fraction f1,f2;
-        printf("enter numerator and denominator of first fraction\n");
-        scanf("%d%d",&f1.num,&f1.den);
-        printf("enter numerator and denominator of second fraction\n");
-        scanf("%d%d",&f2.num,&f2.den);  
-        rnum=f1.num*f2.num;
-        rden=f1.den*f2.den;
-        printf("\nproduct is : %d/%d\n",rnum,rden);
-}
-``
-## 17.Sum Of Digit Of Number:
+`
+## 16.Sum Of Digit Of Number:
 
   
 #include<stdio.h>
@@ -976,7 +955,7 @@ sum of digits is 13
 
 
 ```
-## 18.Call By Value:
+## 17.Call By Value:
 
 #include <stdio.h>
  
@@ -1021,7 +1000,7 @@ Second integer = 12
 
 ## -----------------------------
 
-## 19.Call By Reference:
+## 18.Call By Reference:
 
 #include <stdio.h>
 
@@ -1064,7 +1043,7 @@ b = 20 after function call_by_reference
 ## -----------------------------
 
 
-## 20.Employees Details:
+## 19.Employees Details:
 
   
 #include <stdio.h>
@@ -1131,7 +1110,7 @@ Salary: 15,000000
 ## -----------------------------
 
 
-## 21.Product Of 2 Fractions:
+## 20.Product Of 2 Fractions:
 
 #include<stdio.h>
 
